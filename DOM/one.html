@@ -4,10 +4,71 @@
     <meta charset="UTF-8">
     <title>Learn DOM</title>
 </head>
+
+<style>
+    .bg-black{
+      background-color: darkcyan;
+    }
+    body{
+        background-color: rgb(48, 47, 47);
+    }
+</style>
+
 <body>
     <div class="bg-black">
-        <h1 class="heading">Learn DOM of JS with Zain</h1>
+        <h1 id="title" class="heading">Learn DOM of JS with Zain <span style="display:none;">test text</span> </h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit 1.</h2>
+        <h2>Lorem ipsum dolor sit 2.</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+        
     </div>
 </body>
 </html>
+
+
+
+<!-- document.getElementById('title')
+<h1 id=​"title" class=​"heading">​Learn DOM of JS with Zain​</h1>​
+document.getElementById('title').id
+'title'
+document.getElementById('title').classNamr
+undefined
+document.getElementById('title').className
+'heading'
+document.getElementById('title').getAttribute('id')
+'title'
+document.getElementById('title').getAttribute('class')
+'heading'
+document.getElementById('title').setAttribute('class', 'sample') -->
+
+<!-- title.style.backgroundColor = 'pink'
+'pink'
+title.style.padding = '20px'
+'20px'
+title.style.borderRadius = '5px'
+'5px'
+title.style.border = 'black'
+'black' -->
+
+<!-- title.textContent
+'Learn DOM of JS with Zain'      --disply visible with this
+
+title.innerHTML
+'Learn DOM of JS with Zain'
+
+title.innerText       -- disply not visible
+'Learn DOM of JS with Zain' -->
+
+<!-- document.querySelector('h2') -->
+<!-- document.querySelector('#title') -->
+<!-- document.querySelector('.heading') -->
+
+<!-- document.querySelector('input[type="password"]') -->
