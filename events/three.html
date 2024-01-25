@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 2 projects with Async JS -->
+    <h1>My js code!</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+
+<script>
+   let intervalId; // Variable to store the interval ID
+
+const sayDate = function () {
+    console.log(Date.now());
+}
+
+document.querySelector('#start').addEventListener('click', function () {
+    intervalId = setInterval(sayDate, 1000);
+    console.log('STARTING');
+});
+
+document.querySelector('#stop').addEventListener('click', function () {
+    clearInterval(intervalId);
+    console.log('STOPPED');
+});
+
+</script>
+</html>
